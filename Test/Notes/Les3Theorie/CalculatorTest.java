@@ -20,6 +20,7 @@ public class CalculatorTest {
         calculator = new Calculator();
     }
 
+
     @Test
     public void sum_for1and2_expect3(){
         //Arrange = regelen
@@ -38,7 +39,7 @@ public class CalculatorTest {
          */
 
     }
-
+    //@DisplayName
     @Test
     public void sum_forMinus3and5_expect2(){
         //Act
@@ -47,6 +48,16 @@ public class CalculatorTest {
         //Assert
         assertEquals(2, actual);
     }
+
+//    @Test
+//    public void sum_call2times_expectException(){
+//        assertThrows(IllegalStateException.class, () -> {
+//            calculator.sum(0, 0);
+//            calculator.sum(0, 0);
+//        });
+//    }
+
+
 
 
 }

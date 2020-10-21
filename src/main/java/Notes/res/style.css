@@ -1,0 +1,17 @@
+.root{
+    -fx-background-color: #00cccc;
+    -fx-font-family: serif;
+    -fx-font-size: 25px;
+}
+
+.label{
+    -fx-background-color: red;
+}
+.text-field{
+
+}
+
+
+#special-label{
+    -fx-font-size: 40px;
+}

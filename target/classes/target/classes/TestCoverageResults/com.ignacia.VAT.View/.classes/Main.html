@@ -1,0 +1,150 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Main</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.ignacia.VAT.View</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Main (com.ignacia.VAT.View)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Main</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 22)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.ignacia.VAT.View;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import Notes.AppClassGeneral;
+<i>4</i>&nbsp;import javafx.application.Application;
+<i>5</i>&nbsp;import javafx.scene.Scene;
+<i>6</i>&nbsp;import javafx.scene.control.Button;
+<i>7</i>&nbsp;import javafx.scene.control.Label;
+<i>8</i>&nbsp;import javafx.scene.control.TextArea;
+<i>9</i>&nbsp;import javafx.scene.layout.BorderPane;
+<i>10</i>&nbsp;import javafx.scene.layout.HBox;
+<i>11</i>&nbsp;import javafx.scene.layout.VBox;
+<i>12</i>&nbsp;import javafx.stage.Stage;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;import java.util.Arrays;
+<i>15</i>&nbsp;import java.util.List;
+<i>16</i>&nbsp;
+<b class="nc"><i>17</i>&nbsp;public class Main extends Application {</b>
+<i>18</i>&nbsp;    public static void main(String[] args) {
+<i>19</i>&nbsp;
+<b class="nc"><i>20</i>&nbsp;        App schoolNote = new App();</b>
+<b class="nc"><i>21</i>&nbsp;        schoolNote.schoolAantekeningen();</b>
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;
+<i>24</i>&nbsp;        //Launch application
+<b class="nc"><i>25</i>&nbsp;        launch(Main.class);</b>
+<i>26</i>&nbsp;    }
+<i>27</i>&nbsp;
+<i>28</i>&nbsp;    @Override
+<i>29</i>&nbsp;    public void start(Stage window) throws Exception {
+<i>30</i>&nbsp;
+<b class="nc"><i>31</i>&nbsp;        window.setTitle(&quot;Proftaak Vorm Analyse Tool&quot;);</b>
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;        //Layout
+<b class="nc"><i>34</i>&nbsp;        BorderPane layout = new BorderPane();</b>
+<i>35</i>&nbsp;
+<b class="nc"><i>36</i>&nbsp;        HBox buttons = new HBox();</b>
+<b class="nc"><i>37</i>&nbsp;        buttons.setSpacing(10);</b>
+<b class="nc"><i>38</i>&nbsp;        buttons.getChildren().add(new Button(&quot;Vorm&quot;));</b>
+<b class="nc"><i>39</i>&nbsp;        buttons.getChildren().add(new Button(&quot;Second&quot;));</b>
+<b class="nc"><i>40</i>&nbsp;        buttons.getChildren().add(new Button(&quot;Third&quot;));</b>
+<i>41</i>&nbsp;
+<b class="nc"><i>42</i>&nbsp;        VBox texts = new VBox();</b>
+<b class="nc"><i>43</i>&nbsp;        texts.setSpacing(10);</b>
+<b class="nc"><i>44</i>&nbsp;        texts.getChildren().add(new Label(&quot;First&quot;));</b>
+<b class="nc"><i>45</i>&nbsp;        texts.getChildren().add(new Label(&quot;Second&quot;));</b>
+<b class="nc"><i>46</i>&nbsp;        texts.getChildren().add(new Label(&quot;Third&quot;));</b>
+<i>47</i>&nbsp;
+<b class="nc"><i>48</i>&nbsp;        layout.setTop(buttons);</b>
+<b class="nc"><i>49</i>&nbsp;        layout.setLeft(texts);</b>
+<i>50</i>&nbsp;
+<b class="nc"><i>51</i>&nbsp;        layout.setCenter(new TextArea(&quot;&quot;));</b>
+<i>52</i>&nbsp;
+<i>53</i>&nbsp;
+<i>54</i>&nbsp;
+<i>55</i>&nbsp;//        layout.setTop(new Label(&quot;top&quot;));
+<i>56</i>&nbsp;//        layout.setRight(new Label(&quot;right&quot;));
+<i>57</i>&nbsp;//        layout.setBottom(new Label(&quot;bottom&quot;));
+<i>58</i>&nbsp;//        layout.setLeft(new Label(&quot;left&quot;));
+<i>59</i>&nbsp;//        layout.setCenter(new Label(&quot;center&quot;));
+<i>60</i>&nbsp;
+<b class="nc"><i>61</i>&nbsp;        Scene view = new Scene(layout,800,500);</b>
+<i>62</i>&nbsp;
+<b class="nc"><i>63</i>&nbsp;        window.setScene(view);</b>
+<b class="nc"><i>64</i>&nbsp;        window.show();</b>
+<i>65</i>&nbsp;
+<i>66</i>&nbsp;    }
+<i>67</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-10-17 02:04</div>
+</div>
+</body>
+</html>
